@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path='')
 db_name = 'mydb'
 client = None
 db = None
-
+print('done')
 if 'VCAP_SERVICES' in os.environ:
     vcap = json.loads(os.getenv('VCAP_SERVICES'))
     print('Found VCAP_SERVICES')
